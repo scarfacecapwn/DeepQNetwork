@@ -105,7 +105,7 @@ echo "nngraph installation completed"
 echo "Installing FCEUX_Learning_Environment ... "
 cd /tmp
 rm -rf FCEUX_Learning_Environment
-git clone https://github.com/ehrenbrav/FCEUX_Learning_Environment.git
+git clone https://github.com/scarfacecapwn/FCEUX_Learning_Environment.git
 cd FCEUX_Learning_Environment
 $PREFIX/bin/luarocks make
 RET=$?; if [ $RET -ne 0 ]; then echo "Error. Exiting."; exit $RET; fi
