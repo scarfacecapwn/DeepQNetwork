@@ -40,7 +40,7 @@ cmd:option('-save_versions', 0, '')
 cmd:option('-steps', 10^5, 'number of training steps to perform')
 cmd:option('-eval_steps', 10^5, 'number of evaluation steps')
 
-cmd:option('-verbose', 2,
+cmd:option('-verbose', 4,
            'the higher the level, the more information is printed to screen')
 cmd:option('-threads', 1, 'number of BLAS threads')
 cmd:option('-gpu', -1, 'gpu flag')

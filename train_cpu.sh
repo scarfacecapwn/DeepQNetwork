@@ -24,7 +24,7 @@ ncols=1 # Represents just the Y (ie - grayscale) channel.
 agent="NeuralQLearner"
 agent_type="DQN3_0_1"
 agent_name=$agent_type"_"$1"_FULL_Y"
-actrep=8 # Number of times an action is repeated (and a screen returned). 4 for Atari...
+actrep=1 # Number of times an action is repeated (and a screen returned). 4 for Atari...
 ep=1 # The probability of choosing a random action rather than the best predicted action.
 eps_end=0.01 # What epsilon ends up as going forward.
 eps_endt=1000000 # This probability decreases over time, presumably as we get better.
@@ -56,7 +56,7 @@ prog_freq=50000 # How often do you want a progress report?
 # PERFORMANCE AND DEBUG OPTIONS
 gpu=-1 # Zero means "use the GPU" which is a bit confusing... -1 for CPU.
 num_threads=8
-verbose=3 # 2 is default. 3 turns on debugging messages about what the model is doing.
+verbose=0 # 2 is default. 3 turns on debugging messages about what the model is doing.
 random_starts=0 # How many NOOPs to perform at the start of a game (random number up to this value). Shouldn't matter for SMB?
 seed=1
 #saved_network="<path-to-t7-file>"
